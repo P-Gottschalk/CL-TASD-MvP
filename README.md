@@ -44,11 +44,11 @@ For each of theses languages and datasets, please run the section called "Model 
 Once this has been completed, please run the section called "Model Evaluation: Language". This again uses the `model/main_train.py` function, but for model evaluation. This is achieved by not including parameter `--do_train`, but instead `do_inference`, `do_inference_best_5` or `do_inference_best_ckpt`.
 
 Note that the files for the Multilingual(_Small) and English languages are slightly different. They both have a section called "Model Training", but a "Model Evaluatiom: Language" section for each language from the following list:
-    - English
-    - Dutch
-    - French
-    - Spanish
-    - Turkish
+- English
+- Dutch
+- French
+- Spanish
+- Turkish
 
 Lastly, the file `Multilingual_Small_MABSA_CL_MvP_TASD.ipynb` has an entire new section called "Model - Limited Size", which contains an entire section to train and evaluate models on a multilingual dataset that is limited to the same size with respect to sentences as the individual language datasets.
 
@@ -71,5 +71,6 @@ Our model is inspired by and partially adapted from code by:
 - Peper, J. & Wang, L. (2022). Generative aspect-based sentiment analysis with contrastive learning and expressive structure. In Findings of the association for computational linguistics: (EMNLP, 2022) (pp. 6089–6095). ACL. GitHub: https://github.com/jpeper/GEN_SCL_NAT.git
 - Gou, Z., Guo, Q. & Yang, Y. (2023). MvP: Multi-view prompting improves aspect sentiment tuple prediction. In 61st Annual Meeting of the Association for Computational Linguistics (ACL 2023) (pp. 4380–4397). ACL. GitHub: https://github.com/ZubinGou/multi-view-prompting.git
 - Wu, C., Ma, B., Liu, Y., Zhang, Z., Deng, N., Li, Y., . . . Xue, Y. (2025). M-ABSA: A multi-lingual dataset for aspect-based sentiment analysis. (arXiv preprint arXiv: 2502.11824). GitHub: https://github.com/swaggy66/eval-llm-mabsa.git
+
 
 
