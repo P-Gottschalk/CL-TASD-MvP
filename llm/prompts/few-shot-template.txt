@@ -1,0 +1,21 @@
+You are given a review sentence. Your task is to identify all sentiment elements it contains.
+
+- The "aspect term" refers to a specific feature, attribute, or aspect of a product mentioned. Explicit aspect terms appear explicitly as a substring of the given text. The aspect term might be "it" for the implicit aspect.
+- The "aspect category" refers to the category that aspect belongs to from the predefined list: ["drinks prices", "restaurant prices", "restaurant miscellaneous", "ambience general", "restaurant general", "food general", "food quality", "location general", "drinks quality", "food prices", "food style_options", "drinks style_options", "service general"] 
+- The "sentiment polarity" is either "positive", "negative" and "neutral". "neutral" means mildly positive or mildly negative. Triplets with objective sentiment polarity should be ignored.
+
+Requirements: 
+- Aspect terms must be exact matches in the review or are "it" for implicit aspects. 
+- Aspect categories and polarities must be chosen from the above lists.
+- Aspect terms must be in <<<language>>>, while categories and polarities are in English
+
+Format output as follows:
+[
+  1. Sentiment elements: [("aspect term", "aspect category", "sentiment polarity"), ...]
+]
+
+Failure to follow this exact format will result in evaluation failure.
+
+Here are 10 example sentences from our training set:
+
+<<<data_sentences>>>
